@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+  <meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7-Day Weather</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css" />
+</head>
+	
+<body>
+  <div class="vignette"></div>
+	
+	
+	<div class="container">
+		
+		<div class="today">
+					
+			<div class="today-left">
+				
+				<div class="today-left-city">
+					<div class="today-current"></div>
+					<div class="today-city"></div>		
+				</div>
+				
+				<div class="today-left-icon wi wi-cloudy" id="today-icon"></div>
+		  </div> <!-- today left close -->
+						
+			
+			<div class="today-right">
+				<div class="today-right-tex">
+					<div class="today-right-temp"></div>
+					<div class="today-right-degree"></div>
+				</div>
+			</div>
+		
+		</div> <!-- today close -->
+		
+		
+		<div class="slants">///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+		
+		
+		
+		<div class="week">
+			<div class="week-tex">
+			
+		  <div class="week-panel">
+				<div class="week-day" id="week-day-1"></div>
+				<div class="week-date" id="week-date-1"></div>
+				<div class="icon" id="week-icon-1"></div>
+				<div class="week-high" id="week-high-1"></div>
+				<div class="week-low" id="week-low-1"></div>
+			</div>
+			
+			<div class="week-panel">
+				<div class="week-day" id="week-day-2"></div>
+				<div class="week-date" id="week-date-2"></div>
+				<div class="icon" id="week-icon-2"></div>
+				<div class="week-high" id="week-high-2"></div>
+				<div class="week-low" id="week-low-2"></div>
+			</div>
+			
+			<div class="week-panel">
+				<div class="week-day" id="week-day-3"></div>
+				<div class="week-date" id="week-date-3"></div>
+				<div class="icon" id="week-icon-3"></div>
+				<div class="week-high" id="week-high-3"></div>
+				<div class="week-low" id="week-low-3"></div>
+			</div>
+			
+			<div class="week-panel">
+				<div class="week-day" id="week-day-4"></div>
+				<div class="week-date" id="week-date-4"></div>
+				<div class="icon" id="week-icon-4"></div>
+				<div class="week-high" id="week-high-4"></div>
+				<div class="week-low" id="week-low-4"></div>
+			</div>
+			
+			<div class="week-panel">
+				<div class="week-day" id="week-day-5"></div>
+				<div class="week-date" id="week-date-5"></div>
+				<div class="icon" id="week-icon-5"></div>
+				<div class="week-high" id="week-high-5"></div>
+				<div class="week-low" id="week-low-5"></div>
+			</div>
+			
+			<div class="week-panel">
+				<div class="week-day" id="week-day-6"></div>
+				<div class="week-date" id="week-date-6"></div>
+				<div class="icon" id="week-icon-6"></div>
+				<div class="week-high" id="week-high-6"></div>
+				<div class="week-low" id="week-low-6"></div>
+			</div>
+			</div>
+		</div> <!-- week close -->
+
+	</div> <!-- container close -->
+	
+	<div class="fah-cel">
+		<span class="f highlight">FAHRENHEIT</span> /
+		<span class="c">CELSIUS</span>
+	</div>
+
+	
+	
+	
+	  <script src="jquery-3.2.1.min.js"></script>
+		<script src="script.js"></script>
+</body>

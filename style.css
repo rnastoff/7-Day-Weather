@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #3e3e3d;
+	background-image: url("tex-1.png");
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	width: 600px;
+	height: 409px;
+	margin: 0 auto;
+	margin-top: 20vh;
+	background: #3b3b3b;
+	box-shadow: 0px 0px 40px rgba(0,0,0,.75);
+}
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 400px rgba(0,0,0,1) inset;
+	z-index: -1;
+}
+
+
+
+/************** TODAY **************/
+.today {
+	height: 190px;
+	width: 100%;
+	background: linear-gradient(#454545, #3a3a3a); 	
+}
+
+
+.today-left {
+	width: 400px;
+	height: 100%;
+	background-image: url("tex-1.png");
+	float: left;
+}
+
+
+.today-left-city {
+	float: left;
+	width: 50%;
+	margin-top: 70px;
+}
+.today-left-icon {
+	float: right;
+	margin-top: 40px;
+	font-size: 100px;
+	color: #d1d1d1;
+	text-align: center;
+	width: 39%;
+}
+
+
+.today-current {
+	color: #9b9b9b;
+	margin-left: 20px;
+	font-size: 25px;
+	font-weight: 300;
+  letter-spacing: -1.5px;
+}
+.today-city {
+	color: #d1d1d1;
+	margin-left: 20px;
+	margin-top: -5px;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+}
+
+
+
+
+/************** TODAY RIGHT **************/
+.today-right {
+	width: 200px;
+	height: 100%;
+	background: linear-gradient(to bottom left, #343434, #1b1b1b);
+	float: right;
+}
+.today-right-tex {
+	height: 100%;
+	width: 100%;
+	background-image: url("tex-1.png");
+}
+
+
+.today-right-temp {
+	font-size: 110px; /* 110px */
+	font-weight: 100;
+	color: #d1d1d1;
+	float: left;
+	margin-top: 0px;
+	padding: 0;	
+	margin-top: 25px; /* 25 */
+	margin-left: 30px; /* 30 */
+	text-align: center;
+}
+.today-right-degree {
+	font-size: 20px;
+	color: #d1d1d1;
+	float: left;
+	margin-top: 50px; /* 50 */
+}
+
+
+
+
+
+.today:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.slants {
+	width: 100%;
+	overflow: hidden;
+	font-size: 16px;
+	letter-spacing: 0px;
+}
+
+
+/************** WEEK **************/
+.week {
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(#3a3a3a, #282828); /* 282828 */	
+}
+.week-tex {
+	background-image: url("tex-1.png");
+	height: 100%;
+	width: 100%;
+}
+.week-panel {
+	width: 100px;
+	height: 100%;
+	color: #9b9b9b;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.week-day {
+	font-weight: 500;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	color: #d1d1d1;
+}
+.week-date {
+	font-size: 14px;
+}
+.icon {
+	font-size: 40px;
+	margin-top: 20px;
+	color: #d1d1d1;
+}
+.week-high {
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.week-low {
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #646464;
+}
+
+.fah-cel {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	color: #646464;
+	width: 300px;
+	z-index: 100;
+	transition: color 0.5s;
+}
+.fah-cel:hover {	
+	color: #9b9b9b;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+.highlight {
+	color: #9b9b9b;	
+}
+
+
+
+/************** MEDIA QUERY **************/
+@media screen and (max-width: 630px) {	
+	.container {
+		width: 400px;
+		height: 409px;
+	}
+	.vignette {
+  	box-shadow: 0 0 300px rgba(0,0,0,.75) inset;
+	}
+	.today {
+		height: 150px;
+	}	
+	.today-left {
+		width: 250px;
+	}
+	.today-left-city {
+		width: 14%;
+		margin-top: 55px;
+	}
+	
+	
+	.today-right {
+		width: 150px;
+		float: right;
+		height: 100%;
+	}
+	.today-current {
+		margin-left: 20px;
+		font-size: 20px;
+	}
+	.today-city {
+		margin-left: 20px;
+		margin-top: -5px;
+		font-size: 20px;
+	}
+	
+	
+	
+	.today-right-temp {
+		font-size: 70px; /* 70px */
+		float: left;
+		margin-top: 30px; /* 30px */
+		margin-left: 30px; /* 30px */
+	}
+	.today-right-degree {
+		font-size: 20px; /* 20 */
+		margin-top: 45px; /* 45 */
+	}
+	
+	
+	.today-left-icon {
+		float: right;
+		margin-top: 47px;
+		font-size: 55px;
+		text-align: center;
+		width: 39%;
+	}
+	
+	
+	
+	
+	.week {
+		height: 240px;
+	}
+	.week-panel {
+		float: none;
+		display: flex;
+		height: 40px;
+		width: 100%;
+		padding: 0;
+		padding-top: 7.5px;
+	}
+	.week-date {
+		order: 1;
+		width: 15%;
+		font-size: 13px;
+	}
+	.week-day {
+		order: 2;
+		width: 57%;
+		text-align: left;
+	}
+	.icon {
+		order: 5;
+		margin: 0;
+		width: 9%;
+		text-align: right;
+		font-size: 25px;
+	}
+	.week-high {
+		order: 3;
+		width: 8%;
+		margin: 0;
+		font-size: 18px;
+	}
+	.week-low {
+		order: 4;
+		width: 8%;
+		margin: 0;
+		font-size: 18px;
+	}	
+}
+
+
+
+
+/************** MEDIA QUERY **************/
+@media screen and (max-width: 440px) {	
+
+	.container {
+		width: 330px;
+		height: 389px;
+	}
+	.vignette {
+  	box-shadow: 0 0 300px rgba(0,0,0,.75) inset;
+	}
+	.today {
+		height: 130px;
+	}	
+	.today-left {
+		width: 200px;
+	}
+	.today-left-city {
+		width: 14%;
+		margin-top: 50px;
+	}
+	.today-right {
+		width: 130px;
+		float: right;
+		height: 100%;
+	}
+	.today-current {
+		margin-left: 20px;
+		font-size: 16px;
+	}
+	.today-city {
+		margin-left: 20px;
+		margin-top: -3px;
+		font-size: 16px;
+	}	
+	.today-left-icon {
+		float: right;
+		margin-top: 47px;
+		font-size: 40px;
+		text-align: center;
+		width: 39%;
+	}
+
+	
+	
+  .today-right-temp {
+		font-size: 50px; /* 50 */
+		float: left;
+		margin-top: 35px; /* 35 */
+		margin-left: 30px;  /* 30 */
+	}
+	.today-right-degree {
+		font-size: 20px;
+		margin-top: 45px; /* 45 */
+	}
+	
+	
+	
+	.week-day {
+		order: 2;
+		width: 52%;
+		text-align: left;
+	}
+	.week-high {
+		width: 10%;
+		font-size: 18px;
+	}
+	.week-low {
+		width: 10%;
+		font-size: 18px;
+	}	
+	
+	
+	
+	
+	
+	
+}
